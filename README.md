@@ -13,7 +13,7 @@ reliability targets, observable services, repeatable infrastructure, safer
 changes, faster diagnosis, and automation that engineers trust.
 
 [GitHub](https://github.com/akdur) ·
-[LinkedIn](https://linkedin.com/in/arunkumarduraipandian) ·
+[LinkedIn](https://linkedin.com/in/arunkduraipandian/) ·
 [Email](mailto:arukdpn@gmail.com)
 
 ## Reliability at scale
