@@ -1,0 +1,93 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import re
+import sys
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[1]
+README = ROOT / "README.md"
+
+REQUIRED_TEXT = (
+    "# Arun Kumar Duraipandian",
+    "Principal-level SRE | Distributed SaaS Platforms | AI-Assisted Reliability Engineering",
+    "Site Reliability Engineering Professional at IBM",
+    "214 customers",
+    "150 clusters",
+    "2,500 virtual server instances",
+    "1,400 monitoring controls",
+    "12 consecutive months without an SLO breach",
+    "95% upgrade success",
+    "20% MTTR improvement",
+    "1,040 engineering hours",
+    "approximately $50K in estimated annual savings",
+    "## Building in public",
+    "## Technical focus",
+    "## Recognition",
+)
+
+PROHIBITED_PATTERNS = {
+    "named customer": r"\b(?:Kaiser Permanente|BNPP|Prudential|Geico)\b",
+    "unofficial IBM title": r"\b(?:Staff SRE|Principal SRE|SRE Manager) at IBM\b",
+    "internal project name": r"\b(?:SRE CortexAI|SREFlow|BA SaaS Metrics Portal)\b",
+    "IBM internal URL": r"https?://[^\s)]+\.ibm\.com\b",
+    "badge wall": r"img\.shields\.io|github-readme-stats",
+    "decorative HTML": r"<(?:div|table|img)\b",
+    "placeholder": r"\b(?:TBD|TODO|coming soon)\b",
+}
+
+
+def validate(text: str) -> list[str]:
+    failures: list[str] = []
+
+    for required in REQUIRED_TEXT:
+        if required not in text:
+            failures.append(f"missing required text: {required}")
+
+    for label, pattern in PROHIBITED_PATTERNS.items():
+        if re.search(pattern, text, flags=re.IGNORECASE):
+            failures.append(f"contains prohibited {label}")
+
+    if text.count("# ") != 1:
+        failures.append("README must contain exactly one H1 heading")
+
+    links = dict(re.findall(r"\[([^]]+)]\(([^)]+)\)", text))
+    expected_links = {
+        "GitHub": "https://github.com/akdur",
+        "LinkedIn": "https://linkedin.com/in/arunkumarduraipandian",
+        "Email": "mailto:arukdpn@gmail.com",
+    }
+    for label, url in expected_links.items():
+        if links.get(label) != url:
+            failures.append(f"missing or incorrect {label} link")
+
+    if len(text.splitlines()) > 125:
+        failures.append("README exceeds the 125-line profile limit")
+
+    if len(text.split()) > 900:
+        failures.append("README exceeds the 900-word profile limit")
+
+    return failures
+
+
+def main() -> int:
+    if not README.exists():
+        print(f"Profile validation failed: missing {README}", file=sys.stderr)
+        return 1
+
+    text = README.read_text(encoding="utf-8")
+    failures = validate(text)
+    if failures:
+        print("Profile validation failed:", file=sys.stderr)
+        for failure in failures:
+            print(f"- {failure}", file=sys.stderr)
+        return 1
+
+    checks = len(REQUIRED_TEXT) + len(PROHIBITED_PATTERNS) + 6
+    print(f"Profile validation passed ({checks} checks).")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
