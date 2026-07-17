@@ -67,14 +67,20 @@ Manager, Content Manager OnDemand, and WebSphere Application Server
 
 ## Building in public
 
-I am turning production experience into vendor-neutral reference implementations:
+I am turning production experience into vendor-neutral reference implementations
+for AI-era reliability engineering:
 
-- A read-only, evidence-driven incident investigation architecture.
-- Reusable reliability automation and infrastructure-as-code patterns.
-- Practical SRE tooling for measurement, capacity, and operational readiness.
+- [agent-skill-assurance-lab](https://github.com/akdur/agent-skill-assurance-lab):
+  evidence-driven assurance for Agent Skills, MCP tool surfaces, policy gates,
+  and safe automation bundles.
+- [agentic-change-gateway](https://github.com/akdur/agentic-change-gateway):
+  typed, policy-gated operational change transactions with mandate, evidence,
+  canary verification, idempotency, rollback, and audit ledger.
+- [slo-economics-twin](https://github.com/akdur/slo-economics-twin):
+  synthetic SLO, capacity, cost, tenant-impact, and reliability ROI modeling.
 
-Each repository will be published when it contains useful code, documentation,
-tests, and a reproducible example.
+Each repository is designed to be runnable locally with synthetic data,
+source-controlled architecture diagrams, tests, CI, and reproducible examples.
 
 ## Recognition
 
