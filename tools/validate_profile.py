@@ -55,7 +55,7 @@ def validate(text: str) -> list[str]:
     links = dict(re.findall(r"\[([^]]+)]\(([^)]+)\)", text))
     expected_links = {
         "GitHub": "https://github.com/akdur",
-        "LinkedIn": "https://linkedin.com/in/arunkumarduraipandian",
+        "LinkedIn": "https://linkedin.com/in/arunkduraipandian/",
         "Email": "mailto:arukdpn@gmail.com",
     }
     for label, url in expected_links.items():
