@@ -49,7 +49,7 @@ def validate(text: str) -> list[str]:
         if re.search(pattern, text, flags=re.IGNORECASE):
             failures.append(f"contains prohibited {label}")
 
-    if text.count("# ") != 1:
+    if len(re.findall(r"^# [^#].*$", text, flags=re.MULTILINE)) != 1:
         failures.append("README must contain exactly one H1 heading")
 
     links = dict(re.findall(r"\[([^]]+)]\(([^)]+)\)", text))
