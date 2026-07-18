@@ -109,7 +109,11 @@ source-controlled architecture diagrams, tests, CI, and reproducible examples.
 
 ## Recognition
 
-- IBM Entrepreneur Award, 2nd Place (2025)
+- IBM Entrepreneur Award (2025)
 - IBM Client and Partner Success Award (2024)
-- Watson Code Assistant Drive, 2nd Place (2025)
+- Watson Code Assistant Drive recognition (2025)
+- IBM SRE-AI Guild Selected Project (2025)
 - IBM Mentor Badge
+- IBM Outstanding Technical Achievement Award (OTAA)
+- Business Automation Recognition Award
+- Bank of America Award of Excellence and Best Performer Award
