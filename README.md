@@ -18,16 +18,16 @@ changes, faster diagnosis, and automation that engineers trust.
 
 ## Reliability at scale
 
-- Support reliability engineering for a distributed SaaS footprint serving **214 customers** across **150 clusters** and approximately **2,500 virtual server instances**.
+- Support reliability engineering for large-scale distributed SaaS platforms across **150 clusters** and approximately **2,500 virtual server instances**.
 - Led a resilience review of **1,400 monitoring controls**, including 584 alert configurations and 816 synthetic checks.
-- Sustained **12 consecutive months without an SLO breach** for a flagship tenant.
+- Sustained **12 consecutive months without an SLO breach** for a critical production workload.
 - Achieved **95% upgrade success** across two release cycles with zero critical upgrade downtime.
 - Improved operational response through under-five-minute detection and a **20% MTTR improvement**.
 
 ## Selected engineering impact
 
 - Designed an AI-assisted, multi-agent incident investigation approach that reduced validated root-cause analysis from **45-60 minutes to approximately 7 minutes** while expanding evidence collection from 2-3 manual sources to six automated sources.
-- Converted that investigation improvement into approximately **1,040 engineering hours** and **approximately $50K in estimated annual savings**, using documented time and labor assumptions.
+- Converted that investigation improvement into approximately **1,040 engineering hours** and **$104K+ in estimated annual productivity value**, using a conservative $100/hour loaded engineering rate.
 - Built reliability and knowledge automation that reduced manual development effort by **80%** and reached **50%+ adoption** across a 50-engineer organization.
 - Engineer infrastructure and application automation with Go, Python, Terraform, Ansible, GitOps, and self-service workflows for repeatable multi-tenant operations.
 - Lead capacity and performance reviews, vulnerability analysis and remediation, patching, upgrades, disaster recovery, and lifecycle maintenance across infrastructure and application tiers.
@@ -61,9 +61,9 @@ SQL, FastAPI, Flask, PostgreSQL, MongoDB, Redis, DB2, and Kafka
 retrieval-augmented generation (RAG), vector search, LLM integration, watsonx
 Orchestrate, Watson ADK, and Milvus
 
-**Enterprise automation:** Cloud Pak for Business Automation, FileNet P8,
-Business Automation Workflow, Content Navigator, Datacap, Operational Decision
-Manager, Content Manager OnDemand, and WebSphere Application Server
+**Enterprise platforms:** content services, workflow automation, decision
+management, document processing, application servers, and enterprise integration
+patterns
 
 ## Recognition
 
