@@ -65,47 +65,22 @@ Orchestrate, Watson ADK, and Milvus
 Business Automation Workflow, Content Navigator, Datacap, Operational Decision
 Manager, Content Manager OnDemand, and WebSphere Application Server
 
-## Building in public
+## Portfolio direction
 
-I am turning production experience into vendor-neutral reference implementations
-for AI-era reliability engineering. The four projects are designed as one
-connected SRE operating model:
+I am refining a set of vendor-neutral, synthetic reference projects for AI-era
+reliability engineering. They are currently kept private while I complete a
+final safety, originality, and public-release review.
 
-- **Investigate incidents correctly**
-  → [sre-evidence-engine](https://github.com/akdur/sre-evidence-engine):
-  deterministic incident evidence, stale-signal controls, contradiction checks,
-  benchmark scenarios, and immutable reports.
-- **Prioritize reliability investments**
-  → [slo-economics-twin](https://github.com/akdur/slo-economics-twin):
-  synthetic SLO, capacity, cost, tenant-impact, and reliability ROI modeling.
-- **Validate automation before trust**
-  → [agent-skill-assurance-lab](https://github.com/akdur/agent-skill-assurance-lab):
-  evidence-driven assurance for Agent Skills, MCP tool surfaces, policy gates,
-  and safe automation bundles.
-- **Execute operational changes safely**
-  → [agentic-change-gateway](https://github.com/akdur/agentic-change-gateway):
-  typed, policy-gated operational change transactions with mandate, evidence,
-  canary verification, idempotency, rollback, and audit ledger.
+The operating model behind the work is simple:
 
-In simple terms: prove the incident, choose the highest-value reliability work,
-assure the automation, then execute the change safely.
+- prove incident conclusions with fresh, admissible evidence
+- prioritize reliability investments using SLO risk, capacity, cost, and ROI
+- validate agent skills and MCP tool surfaces before operational use
+- execute AI-assisted operational changes through policy, approval, canary
+  verification, rollback, and audit controls
 
-Current flagship repositories:
-
-- [sre-evidence-engine](https://github.com/akdur/sre-evidence-engine):
-  evidence-first incident investigation trust harness with `4/4` fictional
-  benchmark scenarios.
-- [agent-skill-assurance-lab](https://github.com/akdur/agent-skill-assurance-lab):
-  evidence-driven assurance for Agent Skills, MCP tool surfaces, policy gates,
-  and safe automation bundles.
-- [agentic-change-gateway](https://github.com/akdur/agentic-change-gateway):
-  typed, policy-gated operational change transactions with mandate, evidence,
-  canary verification, idempotency, rollback, and audit ledger.
-- [slo-economics-twin](https://github.com/akdur/slo-economics-twin):
-  synthetic SLO, capacity, cost, tenant-impact, and reliability ROI modeling.
-
-Each repository is designed to be runnable locally with synthetic data,
-source-controlled architecture diagrams, tests, CI, and reproducible examples.
+When published, these projects will use only synthetic examples and public-safe
+architecture patterns.
 
 ## Recognition
 
