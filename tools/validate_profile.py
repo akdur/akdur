@@ -13,9 +13,9 @@ REQUIRED_TEXT = (
     "# Arun Kumar Duraipandian",
     "Principal-level SRE | Distributed SaaS Platforms | AI-Assisted Reliability Engineering",
     "Site Reliability Engineering Professional at IBM",
-    "150 clusters",
-    "2,500 virtual server instances",
-    "1,400 monitoring controls",
+    "100+ clusters",
+    "thousands of virtual server instances",
+    "1,000+ observability controls",
     "12 consecutive months without an SLO breach",
     "critical production workload",
     "95% upgrade success",
@@ -28,6 +28,10 @@ REQUIRED_TEXT = (
 
 PROHIBITED_PATTERNS = {
     "customer count": r"\b\d+ customers\b",
+    "exact cluster count": r"\b150 clusters\b",
+    "exact VSI count": r"\b2,500 virtual server instances\b",
+    "exact monitoring-control count": r"\b1,400 monitoring controls\b",
+    "exact alert/synthetic split": r"\b(?:584 alert|816 synthetic)\b",
     "named customer": r"\b(?:Kaiser Permanente|BNPP|Prudential|Geico)\b",
     "flagship tenant wording": r"\bflagship tenant\b",
     "business automation SaaS wording": r"\b(?:BA SaaS|Business Automation SaaS|IBM Software Business Automation)\b",

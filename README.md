@@ -18,8 +18,8 @@ changes, faster diagnosis, and automation that engineers trust.
 
 ## Reliability at scale
 
-- Support reliability engineering for large-scale distributed SaaS platforms across **150 clusters** and approximately **2,500 virtual server instances**.
-- Led a resilience review of **1,400 monitoring controls**, including 584 alert configurations and 816 synthetic checks.
+- Support reliability engineering for large-scale distributed SaaS platforms across **100+ clusters** and **thousands of virtual server instances**.
+- Led a portfolio-wide resilience review covering **1,000+ observability controls** across alerting rules, synthetic checks, incident workflows, and postmortem quality.
 - Sustained **12 consecutive months without an SLO breach** for a critical production workload.
 - Achieved **95% upgrade success** across two release cycles with zero critical upgrade downtime.
 - Improved operational response through under-five-minute detection and a **20% MTTR improvement**.
