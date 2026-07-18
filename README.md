@@ -65,23 +65,6 @@ Orchestrate, Watson ADK, and Milvus
 Business Automation Workflow, Content Navigator, Datacap, Operational Decision
 Manager, Content Manager OnDemand, and WebSphere Application Server
 
-## Portfolio direction
-
-I am refining a set of vendor-neutral, synthetic reference projects for AI-era
-reliability engineering. They are currently kept private while I complete a
-final safety, originality, and public-release review.
-
-The operating model behind the work is simple:
-
-- prove incident conclusions with fresh, admissible evidence
-- prioritize reliability investments using SLO risk, capacity, cost, and ROI
-- validate agent skills and MCP tool surfaces before operational use
-- execute AI-assisted operational changes through policy, approval, canary
-  verification, rollback, and audit controls
-
-When published, these projects will use only synthetic examples and public-safe
-architecture patterns.
-
 ## Recognition
 
 - IBM Entrepreneur Award (2025)
