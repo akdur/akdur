@@ -18,16 +18,16 @@ changes, faster diagnosis, and automation that engineers trust.
 
 ## Reliability at scale
 
-- Support reliability engineering for large-scale distributed SaaS platforms across **100+ clusters** and **thousands of virtual server instances**.
-- Led a portfolio-wide resilience review covering **1,000+ observability controls** across alerting rules, synthetic checks, incident workflows, and postmortem quality.
-- Sustained **12 consecutive months without an SLO breach** for a critical production workload.
-- Achieved **95% upgrade success** across two release cycles with zero critical upgrade downtime.
+- Support reliability engineering for large-scale distributed SaaS platforms spanning Kubernetes/OpenShift, application, database, identity, and web tiers.
+- Led a portfolio-wide resilience review across alerting, synthetic monitoring, incident workflows, and postmortem quality.
+- Improved SLO governance, production readiness, upgrade safety, and operational response for critical production workloads.
+- Delivered safer platform upgrades across major release cycles while avoiding critical upgrade downtime.
 - Improved operational response through under-five-minute detection and a **20% MTTR improvement**.
 
 ## Selected engineering impact
 
 - Designed an AI-assisted, multi-agent incident investigation approach that reduced validated root-cause analysis from **45-60 minutes to approximately 7 minutes** while expanding evidence collection from 2-3 manual sources to six automated sources.
-- Converted that investigation improvement into approximately **1,040 engineering hours** and **$104K+ in estimated annual productivity value**, using a conservative $100/hour loaded engineering rate.
+- Converted that investigation improvement into over one thousand engineering hours and six-figure estimated annual productivity value, using a conservative loaded engineering-rate model.
 - Built reliability and knowledge automation that reduced manual development effort by **80%** and reached **50%+ adoption** across a 50-engineer organization.
 - Engineer infrastructure and application automation with Go, Python, Terraform, Ansible, GitOps, and self-service workflows for repeatable multi-tenant operations.
 - Lead capacity and performance reviews, vulnerability analysis and remediation, patching, upgrades, disaster recovery, and lifecycle maintenance across infrastructure and application tiers.
